@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+h2,h3{
+    margin: 10px 0;
+}
+
+p{
+    margin: 15px 0;
+}
+/*-----*/
+.upper{
+    text-transform: uppercase;
+}
+
+.opacity{
+    color: rgb(125, 125, 125);
+}
+
+.pad-8-16{
+    padding: 8px 16px;
+}
+
+.pad-12-24{
+    padding: 12px 24px;
+}
+
+.pad-64-16{
+    padding: 64px 16px;
+}
+
+.container{}
+
+.item-left{
+    float: left;
+}
+
+.item-right{
+    float: right;
+}
+
+.bg-black-color-white{
+    background-color: black;
+    color: white;
+}
+
+.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.w-800{
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.not-opacity{
+    color: white!important;
+}
+
+.third{
+    width: 33.33333%;
+}
+
+/*-----NavBar-----*/
+.container::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav{
+    width: 100%;
+    height: 48px;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav-left{
+}
+
+.nav-left > li{
+    height: 48px;
+    padding: 12px 24px;
+    line-height: 24px;
+}
+
+.nav-left li:hover{
+    background-color: #ccc; 
+    color: black;
+}
+
+.nav-left > li:hover a{
+    background-color: #ccc;
+    color: black;
+}
+
+.nav-left li{
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-left li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.nav-menu{
+    position: relative;
+}
+
+.nav-menu:hover .sub-nav-menu{
+    display: block;
+    position: absolute;
+}
+
+.sub-nav-menu{
+    display: none;
+    background-color: white;   
+    text-transform: capitalize;
+    left: 0;
+    bottom: -120px;
+    
+}
+
+.sub-nav-menu li{
+    width: 160px;
+}
+
+.nav-right{
+    line-height: 24px;
+}
+
+.nav-right:hover{
+    background-color: rgb(255, 44, 44);
+}
+
+/*------------Slide-------------*/
+.slide{
+    position: relative;
+}
+
+.slide img{
+    width: 100%;
+    margin-top: 48px;
+}
+
+.slide .caption{
+    position: absolute;
+    padding: 32px 16px;
+    color: white;
+    bottom: 0;
+    text-align: center;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+}
+
+/*-----------The Band-------------*/
+.the-band{
+    width: 100%;
+}
+
+.the-band .the-band-container{
+    max-width: 800px;   
+}
+
+.the-band-container{
+    
+}
+
+.the-band-container > h2{
+    letter-spacing: 6px;
+    font-weight: 100;
+}
+
+.the-band-container .image-container{
+    padding: 32px 0;
+}
+
+.the-band-container .image-container img{
+    width: 60%;
+}
+
+/*-----------Tour Dates-----------*/
+.tour-dates{
+
+}
+
+.tour-dates .tour-dates-content > h2{
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.tour-dates-content .month-container{
+    background-color: white;
+    color: black;
+}
+
+.tour-dates-content .month{
+    border-bottom: 1px solid #ccc;
+}
+
+.tour-dates-content .month > p{
+    margin: 0;
+    text-align: left;
+}
+
+.tour-dates-content .month span{
+    background-color: rgb(252, 57, 57);
+    padding: 2px 8px;
+    margin-left: 3px;
+}
+
+.tour-dates-content .month .number-3{
+    display: inline-block;
+    background-color: black;
+    margin-right: 5px;
+    padding: 0 8px;
+    border-radius: 50%;
+}
+
+.tour-dates-content .card-list{
+    padding: 32px 8px;
+}
+
+.tour-dates-content .card-list .card-member{
+    margin: 0 0 16px;
+    padding: 0 8px;
+}
+
+.tour-dates-content .card-list .card-member > img{
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.tour-dates-content .card-list .card-member > img:hover{
+    filter: brightness(50%);
+}
+
+.tour-dates-content .card-list li{
+    list-style: none;
+    color: black;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.tour-dates-content .card-list .card-content p {
+    margin: 0;
+}
+.tour-dates-content .card-list .card-content{
+    padding: 0.15px 16px;
+    background-color: white;
+    
+}
+
+.tour-dates-content .card-list .card-content button{
+    border: none;
+    display: block;
+    text-align: left;
+    margin: 0 0 16px;
+}
+
+.tour-dates-content .card-list .card-content button:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/*---------Contact---------*/
+.contact{
+
+}
+
+.contact-content{
+
+}
+
+.contact-content > h2{
+    font-weight: 100;
+    letter-spacing: 4px;
+}
+
+.contact-content .content-item{
+    padding: 32px 0;
+}
+
+.contact-content .content-item .info{
+    margin: 0 0 16px;
+    width: 50%;
+}
+
+.contact-content .content-item .info > li{
+    list-style: none;
+    text-align: left;
+    font-weight: 500;
+}
+
+.contact-content .content-item .info span{
+    margin-left: 10px;
+}
+
+.contact-content .content-item .form{
+    width: 50%;
+}
+
+.contact-content .content-item form input{
+    padding: 8px;
+    margin: 0;
+    width: 48%;
+    border: 1px solid #ccc;
+}
+
+.contact-content .content-item form input:last-child{
+    width: 100%;
+    margin-top: 6px;
+}
+
+.contact-content .content-item .form button{
+    margin: 16px 0;
+} 
+/*------footer--------*/
+footer{
+    text-align: center;
+}
+
+footer .icon{
+    font-size: 22px;
+    margin: 0;
+}
+
+footer i:hover{
+    color: #ccc;
+}
